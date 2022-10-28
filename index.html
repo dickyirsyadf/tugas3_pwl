@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Dicky</title>
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .nav-item {
+      padding-right: 50px;
+      color: white !important
+    }
+
+    .carousel-item img,
+    #position {
+      height: 100vh;
+    }
+
+    .navbar {
+      z-index: 99;
+      width: 100vw;
+    }
+
+    .row {
+      margin: 20px;
+    }
+
+    .h-500 {
+      height: 500px
+    }
+
+    .h-50 {
+      height: 50px
+    }
+    .overlay { 
+      color:#fff;
+      position:absolute;
+      z-index:12;
+      top:50%;
+      left:0;
+      width:100%;
+      text-align:center;
+    }
+    .carousel-item:after {
+      content:"";
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      background:rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar-custom" class="fixed-top navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo_ft.png" alt="" width="50dp"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interest">Minat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Pengalaman</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="overlay"><h1>Selamat Datang !</h1></div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://wallpapers.com/images/hd/ocean-and-mountains-n49mlq4z3aivajkh.jpg" alt="First slide">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="pt-5 pb-5">
+    <div class="container mt-4">
+      <h1 class="text-center pt-5" data-aos="fade-in" data-aos-duration="1000">About Me</h1>
+      <div class="row pt-5" data-aos="fade-right">
+        <div class="col-md-6">
+          <p data-aos="fade-right">&nbsp;Saya <b>Muhamad Dicky Irsyad Fauzan</b>, biasa dipanggil Dicky, odik, Irsyad atau terserah kalian ingin memanggil saya apa</p>
+          <p data-aos="fade-right"  data-aos-delay="200">&nbsp;  Saya lahir di <b>Cianjur, 02 November 2001</b></p>
+          <p data-aos="fade-right"  data-aos-delay="400">&nbsp; Saya sekarang berstatus sebagai <b>Mahasiswa Universitas Suryakancana</b> dan memilih Fakultas Teknik dengan Prodi Informatika untuk melanjutkan
+            studi dari SMK</p>
+          <p data-aos="fade-right"  data-aos-delay="600">&nbsp; Saya memiliki motto yang sering saya terapkan dalam kehidupan saya sehari hari, Motto saya yaitu </p>
+            <div class="card"data-aos="fade-right"  data-aos-delay="700">
+              <div class="card-header">
+                Motto
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>"Lakukan yang terbaik, Berharap outcome yang terbaik, tetapi harus siap juga yang terburuk"</p>
+                  <footer class="blockquote-footer">Dicky Irsyad</footer>
+                </blockquote>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left"  data-aos-delay="100">
+          <img width="50%" class="ps-3 ms-5"
+            src="img/logo_ft.png">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="interest" class="mt-5 pt-2">
+    <div class="container mt-4 pt-5">
+      <h1 class="text-center pt-5 pb-4" data-aos="fade-in">Minat Saya</h1>
+      <div class="row pb-5">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://techcult.com/wp-content/uploads/2022/03/Best-Programming-Language-to-Learn.jpg" height="180" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Bahasa</h5>
+                  <p>Saya memiliki minat terhadap bahasa, saya baru menyadari bahwa saya gampang menyerap bahasa, yang memudahkan saya mempelajari beberapa bahasa, dan termasuk beberapa bahasa pemrograman.
+                    <br> Dengan demikian, saya menjadi seorang yang termasuk fast learner dengan membaca dibanding mendengar !
+                  </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">
+            <div class="card h-100" style="width: 18rem;">
+              <img class="card-img-top" src="https://marvel-b1-cdn.bc0a.com/f00000000183808/future.utsa.edu/wp-content/uploads/ElectricalEngineering_1000x750.jpg" height="180" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Elektrikal</h5>
+                  <p>Baru baru ini, saya mendapati minat baru terhadap elektrikal, dan sedang mencoba mempelajari sistem elektrikal</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
+          <div class="card h-100" style="width: 18rem;">
+            <img class="card-img-top" src="https://images1.content-hci.com/commimg/myhotcourses/blog/post/myhc_92279.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Robotik</h5>
+                <p>Dengan minat-minat yang sebelumnya, muncul lah minat terhadap pembuatan robot, saya akan mempelajarinya saat kemampuan programming + elektrikal saya sudah berada di batas minimum untuk membuat sebuah robot sederhana</p>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======= Resume Section ======= -->
+  <section id="resume">
+    <div class="container mt-4 pt-5 pb-5">
+      <div class="section-title">
+        <h1 class="text-center pt-5" data-aos="fade-in">Pengalaman</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
+          <h3>Ringkasan</h3>
+          <div class="">
+            <h4>Dicky irsyad</h4>
+            <p><em>Seorang pemuda yang mudah untuk berbaur dan mengikuti arus pekerjaan yang cepat, hubungi lebih lanjut </em></p>
+            <ul>
+              <li>Cianjur, Jawa Barat</li>
+              <li>(123) 456-7891</li>
+              <li>alibaba@alibaba.com</li>
+            </ul>
+          </div>
+
+          <h3 class="title">Pendidikan Formal</h3>
+          <div class="item">
+            <h4>Rekayasa Perangkat Lunak</h4>
+            <h5>2016 - 2019</h5>
+            <p><em>SMK Negeri 1 Cianjur</em></p>
+            <p></p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="2100" data-aos-duration="2000">
+          <h3 class="resume-title">Pengalaman Kerja</h3>
+          <div class="resume-item">
+            <h4>School Internship Program at PT. Dirgantara Indonesia</h4>
+            <h5>2018</h5>
+            <p><em>Bandung, Jawa Barat, Indonesia </em></p>
+            <ul>
+              <li>Troubleshooting PC kantor</li>
+              <li>Troubleshooting Jaringan </li>
+              <li>IT Support provider</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>PT. Manggala Tetap Jaya (Radio Thomson Cianjur 81.9FM)</h4>
+            <h5>2019 - 2021</h5>
+            <p><em>Cianjur, Jawa Barat, Indonesia</em></p>
+            <ul>
+              <li>Mengatur seluruh penggunaan perangkat kantor</li>
+              <li>Mengatur jadwal serta timing tayang serta iklan</li>
+              <li>Troubleshooting pc,jaringan,pemancar radio</li>
+              <li>Editing audio untuk mastering iklan,dll</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+  <section class="contact section pt-5 pb-5" id="contact">
+    <div class="container " data-aos="zoom-in" data-aos-duration="1500">
+        <div class="contact-info pt-5 mt-5 ps-3 ms-3">
+            <h3>Contact Me </h3>
+            <p class="text">
+                Tinggalkan pesan kepada saya, agar saya dapat berkomunikasi dan membuat teman baru demi terwujudnya cita cita saya, Terimakasih telah mengunjungi web ini.
+            </p>
+        </div>
+        <form action="index.html" class="contact-form">
+            <h3>Send a message</h3>
+            <input type="text" class="contact-form-input" placeholder="Your Name" required="">
+            <input type="email" class="contact-form-input" placeholder="Your Email" required="">
+            <textarea placeholder="Messages here" class="contact-form-input" required=""></textarea>
+            <input type="submit" value="Send" class="btn btn-primary">
+        </form>
+    </div>
+</section>
+
+  <footer class="container-fluid h-50 text-center p-2 bg-secondary">
+    Copyright &copy; IF NR 2020 | 2022
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    let navbar = document.getElementById('navbar-custom')
+
+    window.addEventListener('scroll', function () {
+      let scroll = window.scrollY
+      if (scroll > 50) {
+        navbar.classList.add('bg-light')
+        navbar.classList.remove('navbar-dark')
+      } else {
+        navbar.classList.remove('bg-light')
+        navbar.classList.add('navbar-dark')
+      }
+    })
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
